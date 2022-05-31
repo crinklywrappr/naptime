@@ -1,7 +1,7 @@
 <S> = token (<','> token)*
 <token> = (table / column )
 
-<col> = '"' (table-name <'.'>)* (wildcard / json-column / typed-column / renamed-column / column-with-spaces) '"' / (table-name <'.'>)* (wildcard / json-column / typed-column / renamed-column / column-with-spaces)
+<col> = <'"'> (table-name <'.'>)* (wildcard / json-column / typed-column / renamed-column / column-with-spaces) <'"'> / (table-name <'.'>)* (wildcard / json-column / typed-column / renamed-column / column-with-spaces)
 
 <table> = (table-columns / table-hint / table-alias)
 
